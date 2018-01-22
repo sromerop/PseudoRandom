@@ -1,0 +1,43 @@
+# Señal de reloj del sistema
+NET "clk" LOC = "M6"; # Reloj del sistema de 50 MHz
+# PULSADORES
+#NO tocar linea 4
+NET "Up0"  LOC = "G12";
+NET "Down0"  LOC = "C11";
+NET "Up1"  LOC = "M4";
+NET "Down1"  LOC = "A7";
+
+# RESET
+NET "Rst"  LOC = "P11";
+
+# SWITCHES
+NET "sw<0>" LOC = "K3"; # 
+NET "sw<1>" LOC = "B4"; # 
+NET "sw<2>" LOC = "G3"; # 
+NET "sw<3>" LOC = "F3"; # 
+NET "sw<4>" LOC = "E2"; # 
+NET "sw<5>" LOC = "N3"; # 
+
+# SEÑALES DE ACTIVACIÓN DE LOS DISPLAYS
+NET "Disp3" LOC = "K14"; # SEÑAL = AN0
+NET "Disp2" LOC = "M13"; # SEÑAL = AN1
+NET "Disp1" LOC = "J12"; # SEÑAL = AN2
+NET "Disp0" LOC = "F12"; # SEÑAL = AN3 
+
+# DISPLAY DE 7 SEGMENTOS
+NET "Seg7<0>" LOC = "L14"; # SEÑAL = CA
+NET "Seg7<1>" LOC = "H12"; # SEÑAL = CB
+NET "Seg7<2>" LOC = "N14"; # SEÑAL = CC
+NET "Seg7<3>" LOC = "N11"; # SEÑAL = CD
+NET "Seg7<4>" LOC = "P12"; # SEÑAL = CE
+NET "Seg7<5>" LOC = "L13"; # SEÑAL = CF
+NET "Seg7<6>" LOC = "M12"; # SEÑAL = CG
+
+# ENTRADA ADC - DAC
+NET "DOUT" LOC = "C6"; # "E5"
+
+# SALIDAS ADC - DAC
+NET "CS0" LOC = "C13"; # ADC		"S7"
+NET "CS1" LOC = "D12"; # DAC		"S8"
+NET "SCLK" LOC = "C12"; #			"S5"
+NET "DIN" LOC = "A13"; # 			"S6"
